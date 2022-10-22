@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MailAgent</display-name>
+  <servlet>
+    <description></description>
+    <display-name>MailSendServlet</display-name>
+    <servlet-name>MailSendServlet</servlet-name>
+    <servlet-class>MyMailAgent.MailSendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MailSendServlet</servlet-name>
+    <url-pattern>/MailSendServlet</url-pattern>
+  </servlet-mapping>
+	
+    <servlet>
+    <description></description>
+    <display-name>ChooseServer</display-name>
+    <servlet-name>ChooseServer</servlet-name>
+    <servlet-class>MyMailAgent.ChooseServer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChooseServer</servlet-name>
+    <url-pattern>/ChooseServer</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>DownloadEmail</display-name>
+    <servlet-name>DownloadEmail</servlet-name>
+    <servlet-class>MyMailAgent.DownloadEmail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadEmail</servlet-name>
+    <url-pattern>/DownloadEmail</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>SendDownload</display-name>
+    <servlet-name>SendDownload</servlet-name>
+    <servlet-class>MyMailAgent.SendDownload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendDownload</servlet-name>
+    <url-pattern>/SendDownload</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,21 @@
+#sender,#subject{
+	width: 200px;
+	height: 20px;
+}
+#attachPath{
+	width: 200px;
+	height: 20px;
+	float: left;
+}
+
+#attach{
+	height: auto;
+}
+#use,#pa,#lo{
+	visibility:hidden;
+}
+
+#context{
+	width: 800px;
+	height: 200px;
+}
